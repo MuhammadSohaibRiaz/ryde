@@ -79,7 +79,7 @@ const uploadImage = async (imageFile, driverId = null) => {
 
   try {
     const response = await axios.post(
-      "http://localhost:3001/api/driver/uploadImage",
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/api/driver/uploadImage`,
       formData,
       {
         headers: {

@@ -54,7 +54,7 @@
 const toggle2FA = async (status, userId = null) => {
 try {
 const response = await axios.post(
-'http://localhost:3001/api/user/2fa/toggle',
+`${process.env.NEXT_PUBLIC_API_BASE_URL}/api/user/2fa/toggle`,
 {
 status,
 userId

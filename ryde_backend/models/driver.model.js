@@ -19,7 +19,7 @@ const driverSchema = new mongoose.Schema(
     phoneNo: {
       type: Number,
       required: true,
-      unique: true,
+      
     },
     password: {
       type: String,
