@@ -12,7 +12,7 @@ const reviews = [
       date: "2025-01-20",
     },
   ]
-  
+  //Review Table
   export default function ReviewTable() {
     return (
       <div className="overflow-x-auto">
