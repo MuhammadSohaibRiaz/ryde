@@ -13,7 +13,7 @@ export default function TrackingMap() {
     console.error("Map error:", err)
     setError(err.message)
   }
-
+//commented
   return (
     <div className="space-y-4">
       <div className="flex justify-end mb-4">
