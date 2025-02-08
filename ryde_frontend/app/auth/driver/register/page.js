@@ -4,13 +4,13 @@ import { useState } from "react";
 import Link from "next/link";
 import { Mail, Lock, User, Phone, FileText, Car, ChevronLeft, ChevronRight } from "lucide-react";
 
-import { Button } from "@/components/ui/buttons";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import AuthLayout from "@/components/auth/AuthLayout";
-import Modal from "@/components/ui/popup";
+import { Button } from "../../../../components/ui/buttons";
+import { Input } from "../../../../components/ui/input";
+import { Label } from "../../../../components/ui/label";
+import AuthLayout from "../../../../components/auth/AuthLayout";
+import Modal from "../../../../components/ui/popup";
 import { useDispatch, useSelector } from "react-redux";
-import { driverRegister } from "@/lib/features/AuthSlice";
+import { driverRegister } from "../../../../lib/features/AuthSlice";
 import { useRouter } from "next/navigation";
 
 export default function DriverRegister() {

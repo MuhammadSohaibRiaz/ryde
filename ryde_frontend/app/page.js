@@ -4,8 +4,8 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, Users, Car } from "lucide-react"
 
-import { Button } from "@/components/ui/buttons"
-import { Card, CardContent } from "@/components/ui/Card"
+import {Button} from "../components/ui/buttons"
+import { Card, CardContent } from "../components/ui/Card"
 import { useSelector } from "react-redux"
 import { useRouter } from "next/navigation"
 

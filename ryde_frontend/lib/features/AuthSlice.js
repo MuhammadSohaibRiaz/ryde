@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import api, { multipartApi } from "../axios"; // Your Axios instance
-import { USER_TYPES } from "@/types/profiles";
+import { USER_TYPES } from "../../types/profiles";
 
 const loadUserFromStorage = () => {
   if (typeof window !== "undefined") {
@@ -239,6 +239,10 @@ export const resendEmail = createAsyncThunk(
     }
   }
 );
+
+export const sendResetCode = ()=>{
+  
+}
 
 export const set2fa = createAsyncThunk(
   "auth/set2fa",
@@ -582,6 +586,7 @@ const authSlice = createSlice({
       );
   },
 });
+
 
 export const { logout, clearAuth } = authSlice.actions;
 export default authSlice.reducer;

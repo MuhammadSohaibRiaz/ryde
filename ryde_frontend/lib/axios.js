@@ -2,7 +2,7 @@ import axios from "axios";
 
 const api = axios.create({
   // will be provided
-  baseURL: "http://localhost:3001",
+  baseURL: `${process.env.NEXT_PUBLIC_API_BASE_URL}`,
   headers: {
     "Content-type": "application/json",
   },
@@ -10,7 +10,7 @@ const api = axios.create({
 
 export const multipartApi = axios.create({
   // will be provided
-  baseURL: "http://localhost:3001",
+  baseURL: `${process.env.NEXT_PUBLIC_API_BASE_URL}`,
   headers: {
     "Content-Type": "multipart/form-data",
   },

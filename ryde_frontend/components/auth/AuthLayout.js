@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { ArrowLeft } from "lucide-react"
 
-import { Button } from "@/components/ui/buttons"
+import { Button } from "../../components/ui/buttons"
 
 export default function AuthLayout({ children, title, subtitle }) {
   return (
